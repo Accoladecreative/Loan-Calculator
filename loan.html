@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+    
+
+    <link rel="stylesheet" href="style.css">
+    
+
+    <title>Loan Calculator</title>
+
+</head>
+<body class="bg-black">
+    <div class="container">
+        <div class="card mx-auto d-block col-sm-6">
+            
+                <h2 class="mx-auto d-block">Loan Calculator</h2>
+           
+            
+                <form  method="POST" id="loanCal">
+
+                    <div class="alert alert-danger hidden" id="errmsg"><span class="errmsg mx-auto d-block"></span></div>
+                    <div class="form-group">
+                        <div class="input-group md-3">
+                             <div class="input-group-prepend">
+                                 <span class="input-group-text">$</span>
+                             </div>
+                            <input type="number" name="loan" id="loan" placeholder="Loan Amount" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input-group md-3">
+                             <div class="input-group-prepend">
+                                 <span class="input-group-text">%</span>
+                             </div>
+                             <input type="number" name="interest" id="interest" placeholder="interest" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input-group md-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Years</span>
+                        </div>
+                        <input type="number" name="year" id="year" placeholder="Repayment Year " class="form-control">
+                    </div>
+                </div>
+                    <div class="form-group">
+                        <input type="submit" value="Calculate loan" class="form-control btn btn-primary" id="myBtn">
+                    </div>
+                    <!-- <div class="form-group">
+                        <input type="button" value="Check name" id="checkName">
+                    </div> -->
+
+                </form>
+                
+                <!--Result of the Calculator-->
+                
+                <div class="result">
+                    <div class="spinner-border text-mutted spinner-border-lg" id="spinner">
+                        <p>Calculating Loan...</p>
+                    </div>
+                <h2>Result</h2>
+                    <div class="form-group">
+                        <div class="input-group md-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Monthly Repayment</span>
+                            </div>
+                            <input type="number" name="monthlyRepay" id="monthlyRepay"  class="form-control" disabled>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group md-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Total interest</span>
+                            </div>
+                            <input type="number" name="totalInterest" id="totalInterest"  class="form-control" disabled>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group md-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Total Repayment</span>
+                            </div>
+                            <input type="number" name="totalRepay" id="totalRepay"  class="form-control" disabled>
+                        </div>
+                    </div>
+                    
+                    <p class="mx-auto d-block">Thanks you for using our Loan Calculator, It was develop by <Strong>Accolade</Strong> 14th April, 2020 by 7:21pm</p>
+
+                </div>
+                
+                <Strong style="margin: auto;">&copyAccolade 2020</Strong>
+        </div>
+    </div>
+    
+<script src="app.js"></script>
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>
